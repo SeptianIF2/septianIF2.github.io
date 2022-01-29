@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>TUGAS 13</title>
+  </head>
+  <body>
+    <div class="w3-container">
+      <img src="atas.jpg" alt="atas" width="100%" height="30%" />
+    </div>
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="icon('anjing')">anjing</button>
+      <button class="w3-bar-item w3-button" onclick="icon('kucing')">Kucing</button>
+      <button class="w3-bar-item w3-button" onclick="icon('kelinci')">kelinci</button>
+      <button class="w3-bar-item w3-button" onclick="icon('hamster')">hamster</button>
+      <button class="w3-bar-item w3-button" onclick="icon('landak')">landak</button>
+    </div>
+    <div id="anjing" class="w3-container icon" style="display: none">
+      <h2>anjing</h2>
+      <img src="anjing.jpeg" alt="anjing" class="w3-animate-fading" width="20%" />
+      <p>
+        Anjing adalah hewan pemangsa dan hewan pemakan bangkai, memiliki gigi tajam dan rahang yang kuat untuk menyerang, menggigit, dan mencabik-cabik makanan.
+      </p>
+    </div>
+    <div id="kucing" class="w3-container icon" style="display: none">
+      <h2>Kucing</h2>
+      <img src="kucing3.jpg" alt="kucing" class="w3-animate-bottom" width="20%" />
+      <p>Kucing disebut juga kucing domestik atau kucing rumah adalah sejenis mamalia karnivora dari keluarga Felidae. Kata "kucing" biasanya merujuk kepada "kucing" yang telah dijinakkan, tetapi bisa juga merujuk kepada "kucing besar" seperti singa dan harimau.</p>
+    </div>
+    <div id="kelinci" class="w3-container icon" style="display: none">
+      <h2>kelinci</h2>
+      <img src="kelinci.jpg" alt="kelinci" class="w3-animate-top" width="20%" />
+      <p>Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. Kelinci berkembang biak dengan cara beranak yang disebut vivipar. Dulunya, hewan ini adalah hewan liar yang hidup di Afrika hingga ke daratan Eropa.</p>
+    </div>
+    <div id="hamster" class="w3-container icon" style="display: none">
+      <h2>Hamster</h2>
+      <img src="hamster.jpg" alt="hamster" class="w3-animate-zoom" width="20%" />
+      <p>
+        Hamster adalah binatang sejenis hewan pengerat, terdapat berbagai jenis di dunia dan hampir ada di tiap negara. Walaupun tubuhnya kecil, hamster membutuhkan kandang yang luas. Hamster termasuk ke dalam subfamili Cricetinae.
+      </p>
+    </div>
+    <div id="landak" class="w3-container icon" style="display: none">
+      <h2>Landak</h2>
+      <img src="landak.jpg" alt="landak" class="w3-animate-fading" width="20%" />
+      <p>Landak adalah hewan pengerat yang memiliki rambut yang tebal dan berbentuk duri tajam. Hewan ini ditemukan di Asia, Afrika, maupun Amerika, dan cenderung menyebar di kawasan tropika. Landak merupakan hewan pengerat terbesar ketiga dari segi ukuran tubuh, setelah kapibara dan berang-berang.</p>
+    </div>
+
+    <script>
+      function icon(namaicon) {
+        var i;
+        var x = document.getElementsByClassName("icon");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(namaicon).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
